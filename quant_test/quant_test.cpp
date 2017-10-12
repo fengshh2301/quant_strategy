@@ -1,11 +1,24 @@
-// quant_test.cpp : 定义控制台应用程序的入口点。
+// test_strategy.cpp : 定义控制台应用程序的入口点。
 //
 
 #include "stdafx.h"
+#include "base_strategy.h"
 
+typedef class CStrategyBaseRecv* CREATE_STRATEGY();
 
 int main()
 {
+	std::cout << "hello" << std::endl;
+
+	HINSTANCE hdll = LoadLibraryA("../Debug/quant_strategy.dll");
+	CREATE_STRATEGY* create_recv = (CREATE_STRATEGY*)GetProcAddress(hdll
+		, "?createStrategy@CStrategyRecv@@SAPAVCStrategyBaseRecv@@XZ");
+	CStrategyBaseRecv* precv = create_recv();
+	precv->getStrategyName();
+
+	std::cout << precv->getStrategyName() << std::endl;
+
+	system("pause");
     return 0;
 }
 
