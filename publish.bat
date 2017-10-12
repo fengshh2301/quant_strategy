@@ -1,7 +1,5 @@
 echo publish begin
 
-mkdir publish
-mkdir publish\lib
 mkdir publish\include
 mkdir publish\lib\debug
 mkdir publish\lib\release
