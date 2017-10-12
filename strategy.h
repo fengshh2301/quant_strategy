@@ -1,14 +1,12 @@
 ﻿/*************************************************************************
-* File Name  : base_strategy.h
-* Description:
+* File Name  : strategy.h
+* Description: 磐迅技术量化平台策略接口
 * Author     : Jason Feng
 * Email      : fengshh2301@sina.com
 * Time       : 10/11/2017 19:40:46
  ************************************************************************/
-
-#ifndef _BASE_STRATEGY_H_
-
-#define _BASE_STRATEGY_H_
+#ifndef _STRATEGY_H_
+#define _STRATEGY_H_
 
 #if _MSC_VER > 1000
 #pragma once
@@ -54,6 +52,5 @@ protected:
 	~CStrategyBaseRecv() {};
 };
 
-
-#endif /* end of include guard: _BASE_STRATEGY_H_ */
+#endif /* end of include guard: _STRATEGY_H_ */
 

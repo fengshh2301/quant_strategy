@@ -8,3 +8,4 @@ quant_strategy.opensdf
 quant_strategy.sdf
 quant_strategy.vcxproj.user
 quant_test/quant_test.vcxproj.user
+publish/

@@ -2,7 +2,7 @@
 //
 
 #include "stdafx.h"
-#include "base_strategy.h"
+#include "strategy.h"
 #include "strategy_send.h"
 
 typedef class CStrategyBaseRecv* CREATE_STRATEGY();

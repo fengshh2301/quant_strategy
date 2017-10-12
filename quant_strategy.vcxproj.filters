@@ -24,10 +24,10 @@
     <ClInclude Include="targetver.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="base_strategy.h">
+    <ClInclude Include="quant_strategy.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="quant_strategy.h">
+    <ClInclude Include="strategy.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

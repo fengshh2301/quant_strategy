@@ -8,7 +8,7 @@
 #ifndef _QUANT_STRATEGY_H_
 #define _QUANT_STRATEGY_H_
 
-#include "base_strategy.h"
+#include "strategy.h"
 
 class STRATEGY_EXPORT CStrategyRecv :public CStrategyBaseRecv
 {

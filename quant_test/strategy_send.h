@@ -1,5 +1,5 @@
 #pragma once
-#include "base_strategy.h"
+#include "strategy.h"
 class CStrategySend :
 	public CStrategyBaseSend
 {
