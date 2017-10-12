@@ -14,9 +14,7 @@
 #pragma once
 #endif // _MSC_VER > 1000
 
-//#include "ThostFtdcUserApiStruct.h"
-
-#if defined(ISLIB) && defined(_WIN32)
+#if defined(WIN32)
 #ifdef LIB_STRATEGY_EXPORT
 #define STRATEGY_EXPORT __declspec(dllexport)
 #else

@@ -10,3 +10,7 @@ CStrategySend::CStrategySend()
 CStrategySend::~CStrategySend()
 {
 }
+
+void CStrategySend::insertOrder()
+{
+}

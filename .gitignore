@@ -1,6 +1,10 @@
+.vs/
 Debug/
+quant_test/Debug/
+Release/
+quant_test/Release/
 ipch/
 quant_strategy.opensdf
 quant_strategy.sdf
 quant_strategy.vcxproj.user
-quant_test/Debug/
+quant_test/quant_test.vcxproj.user

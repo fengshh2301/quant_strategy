@@ -6,5 +6,7 @@ class CStrategySend :
 public:
 	CStrategySend();
 	~CStrategySend();
+
+	virtual void insertOrder();
 };
 

@@ -1,7 +1,7 @@
 ﻿#include "stdafx.h"
 #include "quant_strategy.h"
 
-const char CStrategyRecv::mstrategy_name[32] = "test";
+static const char gstrategy_name[32] = "test";
 
 CStrategyBaseRecv * CStrategyRecv::createStrategy()
 {
@@ -12,7 +12,7 @@ CStrategyBaseRecv * CStrategyRecv::createStrategy()
 
 const char * CStrategyRecv::getStrategyName()
 {
-	return mstrategy_name;
+	return gstrategy_name;
 }
 
 CStrategyRecv::CStrategyRecv()

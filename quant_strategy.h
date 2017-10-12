@@ -17,12 +17,6 @@
 #pragma once
 #endif // _MSC_VER > 1000
 
-#ifdef LIB_STRATEGY_EXPORT
-#define STRATEGY_EXPORT __declspec(dllexport)
-#else
-#define STRATEGY_EXPORT __declspec(dllimport)
-#endif
-
 class STRATEGY_EXPORT CStrategyRecv :public CStrategyBaseRecv
 {
 public:
@@ -37,8 +31,6 @@ public:
 	void registerSend(CStrategyBaseSend*);
 
 private:
-	static const char mstrategy_name[32];
-
 	CStrategyBaseSend* mpsend;
 };
 
