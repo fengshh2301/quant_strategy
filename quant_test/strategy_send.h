@@ -8,5 +8,9 @@ public:
 	~CStrategySend();
 
 	virtual void insertOrder();
+
+	virtual void cancelOrder();
+
+	virtual void getInvestorData();
 };
 

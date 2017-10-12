@@ -28,6 +28,10 @@ class CStrategyBaseSend
 {
 public:
 	virtual void insertOrder() = 0;
+
+	virtual void cancelOrder() = 0;
+
+	virtual void getInvestorData() = 0;
 };
 
 class STRATEGY_EXPORT CStrategyBaseRecv
@@ -38,6 +42,14 @@ public:
 	virtual const char *getStrategyName() = 0;
 
 	virtual void registerSend(CStrategyBaseSend*) = 0;
+
+	virtual void onRtnOrder() = 0;
+	virtual void onRtnTrade() = 0;
+	virtual void onRtnTick() = 0;
+
+	virtual void onRspOrder() {};
+	virtual void onRspTrade() {};
+	virtual void onRspTick() {};
 protected:
 	~CStrategyBaseRecv() {};
 };

@@ -21,6 +21,8 @@ int main()
 	CStrategyBaseSend* psend = new CStrategySend;
 	precv->registerSend(psend);
 
+	precv->onRtnTick();
+
 
 	system("pause");
     return 0;

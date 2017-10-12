@@ -13,4 +13,13 @@ CStrategySend::~CStrategySend()
 
 void CStrategySend::insertOrder()
 {
+	std::cout << "insertOrder" << std::endl;
+}
+
+void CStrategySend::cancelOrder()
+{
+}
+
+void CStrategySend::getInvestorData()
+{
 }

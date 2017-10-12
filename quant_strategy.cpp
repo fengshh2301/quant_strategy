@@ -10,16 +10,43 @@ CStrategyBaseRecv * CStrategyRecv::createStrategy()
 	return nullptr;
 }
 
+CStrategyRecv::CStrategyRecv()
+{
+}
+
 const char * CStrategyRecv::getStrategyName()
 {
 	return gstrategy_name;
 }
 
-CStrategyRecv::CStrategyRecv()
-{
-}
-
 void CStrategyRecv::registerSend(CStrategyBaseSend * psend)
 {
 	mpsend = psend;
+}
+
+void CStrategyRecv::onRtnOrder()
+{
+}
+
+void CStrategyRecv::onRtnTrade()
+{
+}
+
+void CStrategyRecv::onRtnTick()
+{
+	std::cout << "onRtnTick" << std::endl;
+
+	mpsend->insertOrder();
+}
+
+void CStrategyRecv::onRspOrder()
+{
+}
+
+void CStrategyRecv::onRspTrade()
+{
+}
+
+void CStrategyRecv::onRspTick()
+{
 }
